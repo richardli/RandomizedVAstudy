@@ -28,7 +28,7 @@ formatData <- function(dat){
 
 data.india.c4 <- formatData(raw.india.c4)
 data.india.c17 <- formatData(raw.india.c17)
-data.all.c4 <- formatData(raw.india.c4)
+data.all.c4 <- formatData(raw.all.c4)
 data.all.c17 <- formatData(raw.all.c17)
 data.esl <- formatData(raw.esl)
 
@@ -138,7 +138,7 @@ for(i in 1:Nsim){
 	                cause.table = causes.table,
 	                type = type, 
 	                length.sim = 1000, burnin = 500, thin = 10 , 
-	                seed = i,
+	                seed = i, #updateCondProb=FALSE,
 	                levels.strength = strength, 
 	                trunc.min = 1e-6, trunc.max = 1-1e-6,
 	                auto.length = FALSE)
