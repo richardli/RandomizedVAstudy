@@ -7,3 +7,9 @@ experiments
 FilesSent_18Feb2016
 FilesSent_29Feb2016
 Toronto_tariff
+*.csv
+*.pdf
+*.zip
+*.rdata
+*.xlsx
+*.db
